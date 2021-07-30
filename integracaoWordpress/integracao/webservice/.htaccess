@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule ^rest/?$ webservice/rest.php [NC,L]
+RewriteRule ^rest/usuarios/([0-9A-Za-z]+)/?$ webservice/rest.php?metodo=usuarios&acao=$1 [NC,L]
